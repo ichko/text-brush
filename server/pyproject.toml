@@ -10,6 +10,7 @@ Flask = "^2.2.2"
 torch = "^1.12.1"
 diffusers = "^0.4.1"
 transformers = "^4.22.2"
+Flask-Cors = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

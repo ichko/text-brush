@@ -4,8 +4,11 @@ import torch
 from torch import autocast
 from diffusers import StableDiffusionPipeline
 from io import BytesIO
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 
 model_id = "CompVis/stable-diffusion-v1-4"
