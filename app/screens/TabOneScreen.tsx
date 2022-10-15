@@ -22,7 +22,6 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
     const seed = 1337;
     const steps = 30;
     const url = `http://78.83.125.177:5000/generate-image?seed=${seed}&steps=${steps}&prompt=${prompt}`;
-    // const url = 'http://localhost:3000/ava.jpeg'
     console.log('fetching');
     setIsLoading(true);
     fetch(url)
@@ -74,9 +73,8 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 3,
     borderRadius: 3,
-    padding: '10px',
+    padding: 10,
     width: '100%',
-    margin: '10px',
   },
   container: {
     padding: 10,
